@@ -1,31 +1,30 @@
 package
 {
+	import com.greensock.TweenLite;
+	
 	import flash.display.Sprite;
+	import flash.display.StageAlign;
+	import flash.display.StageScaleMode;
 	import flash.events.Event;
 	import flash.events.ProgressEvent;
 	
 	public class Main extends Sprite
-	{
+	{	//Properties
+		
+		
+		//Constructor
 		public function Main()
 		{
-			//Traaa
 			
-			loaderInfo.addEventListener(ProgressEvent.PROGRESS, loaderHandler);
-			stage.addEventListener(Event.ENTER_FRAME, frameHandler);
-		}
+			stage.scaleMode = StageScaleMode.NO_SCALE;
+			stage.align = StageAlign.TOP_LEFT;
 		
-		
-		//methodes
-		
-		private function loaderHandler(e:ProgressEvent):void
-		{
-			trace(e.bytesTotal / e.bytesLoaded);
-		}
-		
-		private function frameHandler (e:Event):void
-		{
 			
 		}
+		
+		//Methodes
+		
+		
 		
 	}
 }
